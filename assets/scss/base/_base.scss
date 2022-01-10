@@ -1,0 +1,56 @@
+// BASE 
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;    
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll-up-btn{
+  display: none;
+}
+
+.container{
+  max-width: 1280px;
+  padding: 0 2.5rem;
+  margin: auto;
+}
+
+a{
+  color: var(--white-color);
+  transition: all .3s ease;
+}
+a:hover{
+  color: var(--section-light);
+  transition: all .3s ease;
+}
+

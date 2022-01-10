@@ -1,0 +1,71 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 2rem 0;
+    z-index: 999;
+    font-family: "Poppins", sans-serif;
+    transition: all .5s ease;
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: var(--font-semibold);
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    &-logo{
+        
+        a{
+            font-size: var(--font-logo);
+            transition: all .3s ease;
+            font-family: var(--logo-font-family);
+        }
+    }
+
+    &-menu{
+        li{
+            list-style: none;
+            display: inline-block;
+            
+            a{
+                display: block;
+                font-size: var(--font-li);
+                margin-left: 0.8rem;
+            }
+        }
+    }
+
+    
+
+    &-toggle{
+        color: var(--white-color);
+        display: none;
+    }      
+}
+
+.navbar.sticky{
+    padding: 1rem 0;
+    background-color: var(--secondary-color);
+    transition: all .3s ease;
+    .navbar-logo{
+        a{
+            color: var(--primary-color);
+        }
+    }
+    li{
+        a{
+            color: var(--primary-color);
+        }
+    }
+    .navbar-toggle{
+      color: var(--primary-color);
+    }
+}
+
+.navbar .navbar-menu.active{
+    left: 0;
+    transition: all .5s ease;
+}

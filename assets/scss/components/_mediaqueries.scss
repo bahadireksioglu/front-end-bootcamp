@@ -1,0 +1,114 @@
+@media(max-width:1280){
+    
+    .navbar{
+        .container{
+            padding: 0 3rem;
+        }
+    }
+}
+@media(max-width:1104px){
+    section{
+        height: auto !important;
+    }
+
+    .home{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 100vh !important;
+
+        .container{
+            justify-content: center !important;
+        }
+
+        &-title{
+            font-size: var(--font-biggest);
+        }
+    }
+}
+
+@media(max-width:991px){
+    .about-us{
+        .column-container{
+            flex-direction: column;
+            .column{
+                margin: 0 !important;
+                width: 100%;
+            }
+        }
+    }
+
+    .navbar{
+        padding: 1.4rem 0;
+    }
+
+    .owl-item{
+        width: 300px;
+        height: 225px;
+    }
+}
+
+@media(max-width:947px){
+    .navbar{
+
+        &-toggle{
+            display: block;
+            z-index: 999;
+        }
+
+        &-toggle i.active:before{
+            content: "\f00d";
+            color: var(--primary-color);
+        }
+
+        &-menu{
+            position: fixed;
+            background: var(--secondary-color);
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: -100%;
+            text-align: center;
+            padding-top: 80px;
+            transition: all .5s ease;
+            li{
+                display: block;
+                a{
+                    display: inline-block;
+                    margin: 20px 0;
+                    color: var(--primary-color);
+                    font-size: 24px;
+                }
+            }
+        }
+
+        
+    }
+    .navbar .navbar-menu.active{
+        left: 0;
+        transition: all .5s ease;
+    }
+}
+
+@media(max-width:768px){
+    .services{
+        
+        .services-content{
+            .card-container{
+                
+                .card{
+                    width: 100%;
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
+    }
+
+    .contact{
+        .column-container{
+            flex-direction: column;
+            
+        }
+    }
+}

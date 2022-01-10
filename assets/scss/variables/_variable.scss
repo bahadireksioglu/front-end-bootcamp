@@ -1,0 +1,40 @@
+:root {
+  --body-font: "Poppins", sans-serif;
+  --logo-font-family: "Orbitron", sans-serif;
+  /*--body-font: "Roboto", sans-serif;*/
+
+  --body-color: #f4f4f6;
+  --primary-color: #1d1d1f;
+  --secondary-color: #dadada;
+  --footer-color: #d6eadf;
+  --text-color: #f0f0f0;
+  --image-color: #b8e0d2;
+  --section-light: #f3f3f3;
+  --home-color: #eac4d5;
+
+  --font-logo:1.3rem;
+  --font-li:1.1rem;
+
+  --font-extended-biggest:5rem;
+  --font-biggest: 2rem;
+  --font-bigger: 1.25rem;
+  --font-big: 1.16rem;
+  --font-normal: 0.813rem;
+  --font-small: 0.75rem;
+
+  --font-extra-bold:800;
+  --font-bold:700;
+  --font-semibold:600;
+  --font-regular:500;
+  --font-light:400;
+  --font-extra-light:300;
+  
+  @media screen and (max-width: 768px) {
+    --font-extended-biggest:3rem;
+    --font-biggest: 1.6rem;
+    --font-bigger: 1rem;
+    --font-big: 0.9rem;
+    --font-normal: 0.75rem;
+    --font-small: 0.66rem;
+  }
+}
